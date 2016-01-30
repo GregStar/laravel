@@ -1,0 +1,239 @@
+//checked header 1-3
+.site-header{
+  position:relative;
+}
+.menu {
+	display: flex;
+}
+.menu li{
+	flex-direction: row;
+	flex-grow: 1;
+	font-size: 140%;
+	text-align: left;
+	margin-top: 2.3%;
+	font-weight: 600;
+    border-bottom: 1px solid @darkgray ;
+    height:65px;
+}
+.menu li:nth-child(4){
+	flex-grow: 2;
+	text-align: center;
+    border-bottom: 0;
+    margin-top: 0.5%;
+}
+.menu li:nth-child(5){
+	text-align: right;
+    flex-grow: 1;
+}
+.menu li:nth-child(6){
+	text-align: right;
+    flex-grow: 1;
+}
+.menu a{
+	text-decoration: none;
+	color: @darkgray;
+	font-weight:400;
+}
+.main_nav a:hover{
+  color: @gold;
+}
+.main_nav a:active{
+  color: @gold;
+}
+/*################## start animateion ####################*/
+header {
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0px 8px 5px 0px rgba(51,51,51,0.4);
+  -moz-box-shadow: 0px 8px 5px 0px rgba(51,51,51,0.4);
+  box-shadow: 0px 8px 5px 0px rgba(51,51,51,0.4);
+}
+header .icon-logo {
+	font-size: 85px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+header.smale .icon-logo {
+   font-size: 65px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+
+}
+
+header .icon-logofont {
+	font-size: 60px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+header.smale .icon-logofont {
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+header.smale {
+	height: 10%;
+	-webkit-box-shadow: 0px 8px 5px 0px rgba(51,51,51,0.4);
+	-moz-box-shadow: 0px 8px 5px 0px rgba(51,51,51,0.4);
+    box-shadow: 0px 8px 5px 0px rgba(51,51,51,0.4);
+  -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    transition: height 0.5s;
+}
+.header_img{
+  height:640px;
+  margin-top: 11%;
+}
+
+
+@media screen and (max-width: @screen_xlarge) {
+  header .icon-logo {
+    font-size: 75px;
+  }
+  header.smale .icon-logo {
+    font-size: 53px;
+  }
+  header .icon-logofont {
+    font-size: 50px;
+  }
+  .menu li {
+    font-size: 150%;
+    height:60px;
+    margin-top: 3.6%;
+  }
+  header.smale {
+    height: 18%;
+  }
+  header {
+    width: 100%;
+    height: 20%;
+  }
+  header.smale {
+    height: 10%;
+  }
+  .header_img{
+    height:460px;
+    margin-top: 17%;
+  }
+}
+@media screen and (max-width: @screen_large) {
+  header{
+    height:auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main_nav{
+    height:auto;
+  }
+
+  header nav{
+    overflow: hidden;
+  }
+  .menu li {
+    font-size: 20px;
+    height:45px;
+    flex-basis: 100%;
+  }
+
+  .header_img{
+    height:320px;
+    margin-top: 100px;
+  }
+
+  .menu li{
+    height:45px;
+    border-bottom: 1px solid @darkgray;
+  }
+  .menu li a{
+    color:@darkgray;
+  }
+
+  .menu li:nth-child(4){
+    position: absolute;
+    left: -1000em;
+    top: -1000em;
+  }
+  .menu li:nth-child(5){
+    text-align: left;
+  }
+  .menu li:nth-child(6){
+    text-align: left;
+    border-bottom: 0;
+  }
+  .mobile_header{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+  }
+  .mobile_header li{
+    flex-grow: 1;
+    height:80px;
+  }
+  .mobile_header li:last-child{
+    text-align: right;
+  }
+  h1 .icon-logo_mobile {
+    font-size: 50px;
+    padding:  20px 0 20px 0;
+    display: inline;
+  }
+  .mobile_header a{
+    text-decoration: none;
+    color:@darkgray;
+    margin: 20px  0 20px 0;
+  }
+
+  .js-menu{
+    background-color:white;
+    border:0;
+    padding-right: 0;
+  }
+  button:focus {
+    outline: none;
+    border: none;
+  }
+  .icon-menu{
+    color:@darkgray;
+    font-size:40px;
+  }
+  .icon-menu:hover, .icon-menu:active{
+    color: @gold;
+  }
+
+
+}
+@media screen and (max-width: @screen_medium) {
+}
+
+
+

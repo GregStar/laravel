@@ -1,0 +1,346 @@
+.header_reservation_img{
+  &:extend(.header_img);
+  background: url(../images/reservation_xl.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.reservation{
+  &:extend(.textbox);
+  width: 45%;
+  text-align:center;
+}
+
+
+.firststep h3{
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.secondstep h3{
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+.thirdstep h3{
+  margin-top: 10%;
+  margin-bottom: 2%;
+
+}
+.reservation_form{
+  display:inline-flex;
+  flex-wrap: wrap;
+  width:60%;
+  justify-content: flex-end;
+  }
+.reservation_form li{
+  flex-direction: row;
+  flex-basis: 33%;
+  margin-top: 30px;
+}
+.reservation_form li:last-child{
+  flex-basis: 33%;
+  margin-top: 7%;
+  font-size: 100%;
+  font-weight: 400;
+  height: 45px;
+}
+.btn_form{
+  &:extend(.btn);
+padding:4% 0 4% 0;
+  font-size: 100%;
+  width: 75%;
+}
+
+.teaser_img_reservation{
+  background: url(../images/reservation_teaser_xl.jpg) no-repeat;
+  height: 490px;
+  width: 327px;
+  float: right;
+  margin-top: -10%;
+}
+.firststep .btn_xl {
+  border: 1px solid rgba(153,153,153, 0.15);
+  margin-top: 50px;
+}
+.thirdstep .btn_xl{
+  border: 1px solid rgba(153,153,153, 0.15);
+  margin-top: 50px;
+}
+.restaurant_floor{
+  //background: url(../images/bg_img_reservation_xl.svg) no-repeat;
+  margin-top: 25px;
+  width: 844px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid @darkgray;
+  position: relative;
+}
+
+
+.icon-table_2pax{
+  font-size: 650%;
+
+}
+.icon-table_4pax{
+  font-size: 650%;
+}
+.icon-table_6pax {
+  font-size: 650%;
+}
+.icon-table_8pax {
+  font-size: 650%;
+}
+.reservated_table{
+color:rgba(153,153,153, 0.3);
+}
+.reservated_table:hover{
+  color:rgba(153,153,153, 0.3);
+}
+.table:hover{
+  color:@gold;
+}
+.selected_table{
+  color:@gold;
+}
+.btn_reservation{
+  display: flex;
+}
+
+.top_row_tables{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.top_row_tables li{
+  margin: 1.8% 1.8% 1.8% 1.8%;
+}
+.top_row_tables li .icon-table_2pax{
+  flex-direction: row;
+  flex-basis: 5%;
+}
+.top_row_tables li .icon-table_4pax{
+  flex-direction: row;
+  flex-basis: 10%;
+}
+.top_row_tables li.icon-table_6pax{
+  flex-direction: row;
+  flex-basis: 15%;
+}
+.top_row_tables li.icon-table_8pax{
+  flex-direction: row;
+  flex-basis: 15%;
+}
+.entrance {
+  width: 80px;
+  height: 20px;
+  margin: auto;
+  background-color: white;
+  margin-top: -20px;
+  margin-left: 24%;
+  position: absolute;
+}
+
+
+input[type=checkbox]{
+  zoom: 1.5;
+}
+.checkbox{
+margin-top: 50px;
+}
+.textarea{
+  margin-top: 20px;
+}
+input[type=text], input[type=password], input[type=email] {
+  font-size: 14px;
+  margin-bottom:10px;
+  padding: 8px 6px;
+  height: 40px;
+  width: 75%;
+}
+select{
+  width:75%;
+}
+input:focus, textarea:focus{
+  outline: none !important;
+  border:2px solid @gold;
+
+}
+.btn .btn_xl .submit{
+  margin-top: 20px;
+}
+
+.selectfield{
+  visibility: hidden;
+}
+.secondstep{
+  margin-top: 15%;
+}
+.thirdstep{
+  margin-top: 15%;
+}
+
+
+@media screen and (max-width: @screen_xlarge) {
+  .header_reservation_img {
+    &:extend(.header_img);
+    background: url(../images/reservation_l.jpg) no-repeat center center;
+  }
+  .restaurant_floor{
+    //background: url(../images/bg_img_reservation_xl.svg) no-repeat;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid @darkgray;
+    margin-top: 25px;
+    width: 654px;
+  }
+  .teaser_img_reservation{
+    display:none;
+  }
+  .icon-table_2pax{
+    font-size: 650%;
+
+  }
+  .icon-table_4pax{
+    font-size: 650%;
+  }
+  .icon-table_6pax {
+    font-size: 650%;
+  }
+  .icon-table_8pax {
+    font-size: 650%;
+  }
+
+
+  .reservation_form li{
+    flex-direction: row;
+    flex-basis: 33%;
+    margin-top: 10px;
+  }
+  .reservation_form{
+    width:100%;
+  }
+  .reservation {
+    &:extend(.textbox);
+    width: 460px;
+  }
+  .firststep h3{
+    margin-bottom: 25px;
+    margin-top: 50px;
+  }
+  .secondstep h3 {
+    margin-top: 50px;
+  }
+  .thirdstep{
+    margin-top: 50px;
+  }
+
+  .entrance {
+    width: 60px;
+    height: 10px;
+    margin-top:-10px ;
+  }
+
+  .checkbox{
+     margin-top: 25px;
+   }
+  .reservation_form li:last-child{
+    margin-top: 3.5%;
+  }
+
+
+
+  }
+@media screen and (max-width: @screen_large) {
+  .header_reservation_img {
+    &:extend(.header_img);
+    background: url(../images/reservation_m.jpg) no-repeat center center;
+  }
+  .restaurant_floor{
+    //background: url(../images/bg_img_reservation_xl.svg) no-repeat;
+    margin-top: 25px;
+    width: 369px;
+  }
+  .teaser_img_reservation{
+    display: none;
+  }
+  .icon-table_2pax{
+    font-size: 400%;
+
+  }
+  .icon-table_4pax{
+    font-size:400%;
+  }
+  .icon-table_6pax {
+    font-size: 400%;
+  }
+  .icon-table_8pax {
+    font-size: 400%;
+  }
+  input[type=text], input[type=password], input[type=email] {
+    font-size: 12px;
+    width: 75%;
+  }
+
+  .reservation {
+    &:extend(.textbox);
+    width: 70%;
+  }
+  .firststep h3{
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+  .secondstep h3 {
+    margin-top: 20px;
+  }
+  .thirdstep{
+    margin-top: 20px;
+  }
+  .entrance {
+    width: 40px;
+    margin-top: -20px;
+    margin-right: 61%;
+  }
+  .teaser_img_reservation{
+    display: none;
+  }
+  .reservation_form li{
+    flex-direction: row;
+    flex-basis: 50%;
+    margin-top: 10px;
+    align-items: flex-end;
+  }
+  .reservation_form li:last-child{
+   flex-basis: 50%;
+  }
+  .reservation_form{
+    display:inline-flex;
+    flex-wrap: wrap;
+    width:100%;
+
+  }
+  .entrance {
+    width: 40px;
+    height: 5px;
+    margin-top: -5px;
+  }
+   .thirdstep .btn_xl{
+  }
+  .checkbox{
+    margin-top: 15px;
+  }
+
+}
+@media screen and (max-width: @screen_medium) {
+  .reservation{
+    &:extend(.textbox);
+    width: 80%;
+    text-align:center;
+  }
+  .selectfield{
+    visibility: visible;
+  }
+  .reservation_form li:last-child{
+    margin-top: 6.5%;
+  }
+}

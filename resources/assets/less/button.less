@@ -1,0 +1,64 @@
+
+.action_btn{
+  display: flex;
+  flex-wrap: wrap;
+}
+.action_btn a{
+  flex-grow:1 ;
+  align-items: center;
+  width: 35%;
+  padding:  2% 0 2% 0;
+}
+.action_btn a:first-child{
+  margin-right: 2%;
+}
+.btn_wrapper{
+  width:55%;
+  margin: auto;
+}
+
+
+.btn{
+	text-align: center;
+	text-decoration: none;
+  	background-color: white;
+  	color:@darkgray;
+	.boxshadow;
+ 	 border: 1px solid rgba(153,153,153, 0.15);
+}
+
+.btn:hover{
+  background-color: @darkgray;
+  color: @gold;
+  border: 1px solid @gold;
+}
+
+.btn_xl {
+	&:extend(.btn);
+  	font-size: 100%;
+	font-weight: 400;
+  	width: 35%;
+  	height: 50px;
+}
+
+@media screen and (max-width: @screen_xlarge) {
+
+}
+@media screen and (max-width: @screen_large) {
+  .action_btn a{
+	flex-basis: 100%;
+  }
+  .action_btn a:first-child {
+	margin-right: 0;
+	margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: @screen_medium) {
+  .action_btn a{
+	flex-basis: 100%;
+  }
+  .action_btn a:first-child {
+	margin-right: 0;
+	margin-bottom: 2%;
+  }
+  }

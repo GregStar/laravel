@@ -1,0 +1,100 @@
+//checked about 1-3
+.header_about_img {
+  &:extend(.header_img);
+  background: url(../images/about_xl.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.about {
+  &:extend(.textbox);
+  width: 45%;
+  text-align: center;
+}
+
+.teaser_img_restaurant {
+  background: url(../images/restaurant_about_teaser_xl.jpg) no-repeat;
+  background-size: cover;
+}
+
+.teaser_img_chef {
+  background: url(../images/chef_teaser_xl.jpg) no-repeat;
+  background-size: cover;
+
+}
+.teaser_img_maitre {
+  background: url(../images/maitre_teaser_xl.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+@media screen and (max-width: @screen_xlarge) {
+  .header_about_img {
+    &:extend(.header_img);
+    background: url(../images/about_l.jpg) no-repeat center center;
+  }
+  .teaser_img_restaurant {
+    background: url(../images/restaurant_about_teaser_l.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .teaser_img_chef {
+    background: url(../images/chef_teaser_l.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .teaser_img_maitre {
+    background: url(../images/maitre_teaser_l.jpg) no-repeat center center ;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: @screen_large) {
+
+  .header_about_img {
+    &:extend(.header_img);
+    background: url(../images/about_m.jpg) no-repeat center center;
+  }
+
+  .teaser_img_restaurant {
+    background: url(../images/restaurant_about_teaser_m.jpg) no-repeat center center;
+  }
+
+  .teaser_img_chef {
+    background: url(../images/chef_teaser_m.jpg) no-repeat center center;
+  }
+
+  .teaser_img_maitre {
+    background: url(../images/maitre_teaser_m.jpg) no-repeat center center!important;
+  }
+  .about {
+    &:extend(.textbox);
+    width: 70%;
+    text-align: center;
+  }
+
+
+}
+@media screen and (max-width:@screen_medium) {
+  .header_about_img {
+    &:extend(.header_img);
+    background: url(../images/about_s.jpg) no-repeat center center;
+  }
+
+  .teaser_img_restaurant {
+    background: url(../images/restaurant_about_teaser_s.jpg) no-repeat center center;
+  }
+
+  .teaser_img_chef {
+    background: url(../images/chef_teaser_s.jpg) no-repeat center center;
+  }
+
+  .teaser_img_maitre {
+    background: url(../images/maitre_teaser_s.jpg) no-repeat center center !important;
+  }
+
+  .about {
+    &:extend(.textbox);
+    width: 80%;
+    text-align: center;
+  }
+}
